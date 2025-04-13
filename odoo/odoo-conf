@@ -1,0 +1,9 @@
+[options]
+; Is This ThePassword That Allows Database Operations:
+; admin_passwd =admin
+db_host = db
+db_port = 5432
+db_user = myuser
+db_password = mypassword
+;addons_path =/app/odoo/addons
+;xmlrpc_port = 8069
