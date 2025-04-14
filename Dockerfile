@@ -33,8 +33,11 @@ COPY ./odoo/ /odoo/
 # Install Python dependencies
 RUN  pip3 install --upgrade pip && \
      pip3 install -r requirements.txt
-WORKDIR /odoo
-     RUN  ./setup/debinstall.sh
+# Make sure the debinstall.sh is executable
+RUN chmod +x /odoo/setup/debinstall.sh
+
+# Run the script
+RUN ./setup/debinstall.sh
 # Expose default Odoo port
 EXPOSE 8069
 
