@@ -1,0 +1,26 @@
+# Ignore OS / IDE files
+.DS_Store
+.vscode/
+*.swp
+
+# Ignore Python cache
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Ignore Git
+.git
+.gitignore
+
+# Ignore Debian packaging (not needed for Docker)
+odoo/debian/
+
+# Ignore docs if not used
+odoo/doc/
+
+# Ignore backup or database files if present later
+*.bak
+*.db
+*.sql
+*.tar.gz
+*.zip
